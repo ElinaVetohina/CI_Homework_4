@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
@@ -11,13 +12,17 @@ import java.time.format.DateTimeFormatter;
 
 public class FormTest {
 
+    @BeforeEach
+    void beforeEachTest() {
+        open("http://localhost:9999");
+    }
+
     @Test
     void shouldSendForm() {
         Configuration.headless = true;
         Configuration.holdBrowserOpen = true;
 //        LocalDate date = LocalDate.now();
-        String date = LocalDate.now().plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
-        open("http://localhost:9999");
+        String date = getDatePlusDays(5);
         $("[data-test-id='city'] input").setValue("Москва");
         $("[data-test-id='date'] input").doubleClick();
         $("[data-test-id='date'] input").sendKeys(Keys.DELETE);
@@ -30,5 +35,13 @@ public class FormTest {
         $("[data-test-id='notification']").shouldBe(Condition.visible, Duration.ofSeconds(15));
 //        $(".notification__content").shouldHave(Condition.ownText(date.plusDays(5).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))));
         $(".notification__content").shouldHave(Condition.ownText(date));
+    }
+
+    private String getDatePlusDays(int days) {
+        return LocalDate
+                .now()
+                .plusDays(days)
+                .format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
+
     }
 }
