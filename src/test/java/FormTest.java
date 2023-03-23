@@ -22,7 +22,7 @@ public class FormTest {
         Configuration.headless = true;
         Configuration.holdBrowserOpen = true;
 //        LocalDate date = LocalDate.now();
-        String date = getDatePlusDays(5);
+        String date = getDatePlusDays(3);
         $("[data-test-id='city'] input").setValue("Москва");
         $("[data-test-id='date'] input").doubleClick();
         $("[data-test-id='date'] input").sendKeys(Keys.DELETE);

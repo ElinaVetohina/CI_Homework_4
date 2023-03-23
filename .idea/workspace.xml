@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e23681ef-51b2-4508-a3ca-a9fcc794c8d9" name="Changes" comment="code refactoring" />
+    <list default="true" id="e23681ef-51b2-4508-a3ca-a9fcc794c8d9" name="Changes" comment="code refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +46,7 @@
       <recent name="C:\Users\DEViAS\Desktop\херня эли\aqa-code\CI_Homework_4\artifacts" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FormTest">
+  <component name="RunManager" selected="Gradle.FormTest.shouldSendForm">
     <configuration name="FormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -91,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.FormTest" />
         <item itemvalue="Gradle.FormTest.shouldSendForm" />
+        <item itemvalue="Gradle.FormTest" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679602835155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="code refactoring">
+      <created>1679603287813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679603287813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
